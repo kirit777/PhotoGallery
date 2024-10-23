@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotosCollectionViewCell" customModule="PhotoGallary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="239" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="239" height="205"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMU-nu-VN7">
+                        <rect key="frame" x="0.0" y="0.0" width="239" height="205"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0n-Yl-ZWk">
+                                <rect key="frame" x="0.0" y="0.0" width="239" height="205"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x0n-Yl-ZWk" secondAttribute="bottom" id="7DQ-Eo-W65"/>
+                            <constraint firstItem="x0n-Yl-ZWk" firstAttribute="leading" secondItem="eMU-nu-VN7" secondAttribute="leading" id="8gV-cg-Ef0"/>
+                            <constraint firstAttribute="trailing" secondItem="x0n-Yl-ZWk" secondAttribute="trailing" id="Blc-ek-tTj"/>
+                            <constraint firstItem="x0n-Yl-ZWk" firstAttribute="top" secondItem="eMU-nu-VN7" secondAttribute="top" id="c7l-xw-U5q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="eMU-nu-VN7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BEe-m1-dcY"/>
+                <constraint firstItem="eMU-nu-VN7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hX9-HL-igL"/>
+                <constraint firstAttribute="bottom" secondItem="eMU-nu-VN7" secondAttribute="bottom" id="okX-wT-KWm"/>
+                <constraint firstAttribute="trailing" secondItem="eMU-nu-VN7" secondAttribute="trailing" id="ryt-UU-zEx"/>
+            </constraints>
+            <size key="customSize" width="239" height="205"/>
+            <connections>
+                <outlet property="imgPhoto" destination="x0n-Yl-ZWk" id="nr9-mD-yO1"/>
+            </connections>
+            <point key="canvasLocation" x="180.91603053435114" y="43.309859154929576"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
